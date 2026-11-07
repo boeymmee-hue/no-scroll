@@ -1,0 +1,242 @@
+/* Twilight theme shared by the park, attractions and chapter interiors. */
+:root {
+  --dusk: #291a39;
+  --dusk-light: #3d2850;
+  --gold: #edca8d;
+  --gold-edge: #9e7049;
+  --parchment: #fff3da;
+  --park-ink: #382448;
+  --orange: #d79654;
+}
+body {
+  background:
+    radial-gradient(ellipse at 78% 3%, #725273 0, transparent 43rem),
+    radial-gradient(ellipse at 3% 24%, #4b3055 0, transparent 38rem),
+    var(--dusk);
+  color: var(--parchment);
+}
+.site-header {
+  border-color: #d0a77c54;
+  background: linear-gradient(180deg, #432d52, #30213e);
+  box-shadow: 0 3px 0 #21142f, inset 0 -1px #976e5260;
+}
+.site-header .brand, footer .brand { color: #ffefcf; }
+.brand-dot { color: var(--gold); text-shadow: 0 0 15px #f7ac6175; }
+.site-header nav a, .site-header nav button { color: #ffeaca; }
+.site-header nav a:hover, .site-header nav button:hover { color: #ffd17a; }
+.site-header nav span { color: #432a4c; background: #e7c895; }
+.park { padding-top: clamp(29px, 5vw, 70px); }
+.park-copy h1 { color: #fff3da; text-shadow: 0 3px #7d5365, 0 7px 19px #1b1022; }
+.park-copy h1 span { color: #ffd38d; }
+.park-copy > p:not(.park-kicker) { color: #f0d3d3; }
+.park-ticket {
+  color: #432944;
+  background: linear-gradient(#fff1bd, #e7ae68);
+  box-shadow: 0 5px #9f663d, 0 9px 18px #1c102d88, inset 0 1px #fffbee;
+}
+.park-ticket:hover { color: #382344; background: #ffde9f; }
+.park-surprise { color: #ffe0b0; }
+.park-map { border-color: #f5d6a6; box-shadow: 0 7px #886047, 0 10px #2a1a33, 0 22px 45px #170b25b0; }
+.park-map-caption { color: #e8c4b3; }
+.magic-dust i { color: #f4cb94; opacity: .48; }
+.daily-plan {
+  background: linear-gradient(135deg, #543555, #3a2850 65%, #312241);
+  border-color: #b78768;
+  color: var(--parchment);
+  box-shadow: inset 0 0 0 3px #d4a66d1c, 0 6px #21132d, 0 11px 27px #1a0f2778;
+}
+.daily-plan .park-kicker, .daily-summary { color: #ebcbb6; }
+.hour-choices {
+  background: #281931;
+  box-shadow: inset 0 2px 4px #180c23a0, 0 1px #c08e6b70;
+}
+.hour-choices button { color: #f7dcbd; }
+.hour-choices button[aria-pressed="true"] { color: #472746; background: linear-gradient(#ffedbd, #dba365); box-shadow: 0 3px #92614a; }
+.daily-stops button {
+  color: #432b4f;
+  background: linear-gradient(#fff3d9, #e8c5ac);
+  border-color: #e9c79d;
+  box-shadow: 0 4px #916047, inset 0 1px #fff8e3;
+}
+.daily-stops button:hover { background: #ffedca; }
+.library { padding-bottom: 32px; }
+.realm-gateway {
+  min-height: clamp(230px, 27vw, 380px);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  border: 3px solid #d3a57b;
+  border-radius: 28px 28px 14px 14px;
+  background: #503558;
+  box-shadow: 0 6px #8c5d49, 0 11px #21152e, 0 18px 25px #170c226b;
+}
+.realm-gateway img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 57% 54%;
+  z-index: -2;
+}
+.realm-gateway::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #20112af2, #2816359e 38%, #28163500 76%),
+              linear-gradient(0deg, #241330ad, transparent 60%);
+  pointer-events: none;
+}
+.gateway-copy { padding: clamp(19px, 4vw, 52px); color: #fff4de; }
+.gateway-copy .eyebrow { color: #ffdc9d; font-size: 10px; }
+.gateway-copy h2 { font-size: clamp(30px, 5vw, 60px); line-height: 1.18; margin: 9px 0; font-weight: 900; text-shadow: 0 3px #382044; }
+.gateway-copy > p:last-child { margin-bottom: 0; }
+.gateway-copy > p:not(.eyebrow) { color: #ffdfc9; }
+.library-toolbar { margin-top: 27px; }
+.library-toolbar .search {
+  border: 1px solid #bb8d78;
+  background: #20152c;
+  box-shadow: inset 0 2px 4px #120819a8, 0 1px #74556c;
+  color: #ffe5c1;
+  border-radius: 12px;
+}
+.library-toolbar input, .library-toolbar kbd { color: #ffe5c1; }
+.library-toolbar input::placeholder { color: #d1b9c7; }
+.library .filters { border-color: #8f6b86; }
+.library .tabs button, .library .filter-extras button { color: #f5dfce; border: 1px solid #8d6a80; border-radius: 9px; background: linear-gradient(#4f355a, #3c294c); box-shadow: 0 2px #21132d; }
+.library .tabs button.active, .library .filter-extras button[aria-pressed="true"] { color: #442745; background: linear-gradient(#fce6b8, #d6a273); border-color: #e1bd8e; }
+.library .results-line, .library .library-bottom, .library .empty, .kids-footnote { color: #eed5c7; }
+.library .book-meta, .kids-zone .book-meta { color: #f5dcbb; }
+.library .books, .kids-zone .books {
+  padding: clamp(14px, 3vw, 34px);
+  background:
+    repeating-linear-gradient(90deg, #e5bc8e0c 0 1px, transparent 2px 19px),
+    linear-gradient(100deg, #26172f, #4a2a43 52%, #29182f);
+  border: 3px solid #a77860;
+  border-radius: 21px;
+  box-shadow: inset 0 5px 18px #170d24c9, 0 6px #201329, 0 12px 22px #1a0c2d7a;
+}
+.library .book-wrap::after, .kids-zone .book-wrap::after {
+  height: 13px;
+  background: linear-gradient(#e8be8e 0 2px, #b07f62 2px 5px, #835943 5px 10px, #5c3843 10px 13px);
+  border-radius: 2px;
+  box-shadow: 0 7px 10px #160b20bf;
+}
+.library .book .cover, .kids-zone .book .cover {
+  border-color: #ffedc58c;
+  border-radius: 5px 13px 10px 5px;
+  background:
+    linear-gradient(145deg,#fff5d96b,#fff0cf00 56%,#4f235a32),
+    linear-gradient(90deg,#4e25562b 0 7px,#ffffff42 8px 10px,transparent 11px),
+    var(--cover);
+  box-shadow: inset 0 0 0 3px #fff2d84d, 3px 3px #ffe5bb, 6px 5px #7f535b, 10px 11px 12px #160e26a3;
+}
+.library .book:hover .cover, .kids-zone .book:hover .cover { box-shadow: inset 0 0 0 3px #fff2d84d, 3px 3px #ffe5bb, 6px 5px #7f535b, 10px 15px 16px #160e26ba; }
+.cover-title { font-weight: 900; }
+.cover img { filter: drop-shadow(0 4px 4px #37204433); }
+.library .save-book, .kids-zone .save-book { background: #fff1cf; color: #6d3c59; }
+.kids-zone {
+  background: radial-gradient(ellipse at top, #5f3a59, transparent 72%), #30213c;
+  border-top: 1px solid #ac8272;
+}
+.kids-zone::before { display: none; }
+.kids-gateway { margin-bottom: 29px; }
+.kids-gateway img { object-position: 62% 53%; }
+.kids-zone .kids-badges span { color: #ffebcf; background: #3b254f; border-color: #ba906f; }
+.kids-zone .books { max-width: none; }
+footer { color: #e8c3b8; border-color: #8a637f; }
+footer > p, footer > span { color: #e8c3b8; }
+
+/* The opened book keeps the same carved frame and warm light. */
+#manual, #about {
+  color: #39263e;
+  background: #fbefd8;
+  border: 3px solid #c49771;
+  border-radius: 20px;
+  box-shadow: 0 5px #795044, 0 10px #251631, 0 26px 65px #160c20cf;
+}
+#manual::backdrop, #about::backdrop { background: #20122bd6; }
+#manual .close, #about .close {
+  color: #452a48;
+  background: linear-gradient(#ffebc0,#e5ae79);
+  border-color: #c0906b;
+  box-shadow: 0 3px #8e5a4e;
+}
+#manual .manual-header {
+  background: radial-gradient(ellipse at 18% 34%, #fff2d5a8, transparent 49%), linear-gradient(140deg, #fff1da3b, #5328474d), var(--manual-bg);
+  border-bottom: 4px solid #b38366;
+  box-shadow: inset 0 0 0 5px #fff4d34d, 0 3px #e5c8a5;
+}
+#manual .manual-header img { filter: drop-shadow(0 11px 8px #48304f45); }
+#manual .manual-header h2 { color: #3c2442; font-weight: 900; }
+#manual .manual-number, #manual .manual-en { color: #594058; }
+#manual .chapter-back { background: linear-gradient(#634062,#42294f); color: #ffeac6; }
+#manual .chapter-card {
+  border: 1px solid #d1a985;
+  border-radius: 13px;
+  background: linear-gradient(115deg,#fff5df,#efdfc5 77%,#e9c7ad);
+  box-shadow: 0 3px #b3856c, inset 0 1px #fffef6;
+}
+#manual .chapter-card:hover, #manual .chapter-card.chapter-match { background: linear-gradient(115deg,#fff1ca,#ecd8f2); }
+#manual .chapter-card .chapter-arrow { color: #795175; }
+#manual .chapter-no { color: #755371; }
+#manual .chapter-list { gap: 12px; }
+#manual .step figure { background: radial-gradient(ellipse at 30% 24%, #fff4d4,#e4c9e6); box-shadow: inset 0 0 0 1px #c9a6c2, 0 3px #b88fae; }
+#manual .skill-check, #manual .session-panel, #manual .project-journey, #manual .creation-notes {
+  background: linear-gradient(135deg,#fff0db,#eeddee 70%,#e4c5d5);
+  border: 1px solid #c9a0b5;
+  border-radius: 13px;
+  box-shadow: 0 3px #c7a1b6, inset 0 1px #fff7e7;
+}
+#manual .session-actions .primary, #manual .next-stage .primary { background: linear-gradient(#79547c,#593862); color: #fff2d6; box-shadow: 0 3px #4b3151; }
+#manual .tip { border-color: #d5ae87; background: #f8e6c9; }
+#manual .tool-list label { background: #fff5df; border-color: #d4ad8d; border-radius: 8px; }
+#manual .progress-track { background: #e4ccdb; }
+#manual .progress-fill { background: linear-gradient(90deg,#92619a,#66417a); }
+.library .tabs { gap: 6px; padding: 5px 4px 8px; }
+.library .tabs button { padding: 6px 9px; }
+.library .tabs button span { background: #f1d1a7; color: #452a49; }
+.library .filter-extras button { padding: 5px 9px; }
+.library .filter-extras { padding: 6px 0; }
+.library-bottom { padding-top: 25px; }
+#books:empty { display: none; }
+@media (max-width: 650px) {
+  .realm-gateway { min-height: 200px; border-radius: 18px 18px 11px 11px; }
+  .realm-gateway::after { background: linear-gradient(90deg,#23142be0,#23142b63 52%,transparent),linear-gradient(0deg,#23142b80,transparent 60%); }
+  .realm-gateway img { object-position: 61% 52%; }
+  .gateway-copy > p { font-size: 12px; }
+  .library .books, .kids-zone .books { padding: 14px 12px; column-gap: 17px; }
+  .library .book-wrap::after, .kids-zone .book-wrap::after { left: -7px; right: -7px; }
+  .kids-zone .books { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #manual, #about { border-width: 2px; border-radius: 14px; }
+}
+@media print {
+  #manual { color: #222; background: #fff; }
+  #manual .manual-header, #manual .skill-check, #manual .tip { box-shadow: none; }
+}
+html { scrollbar-color: #997997 #2b1b3a; }
+.library .tabs { scrollbar-width: thin; scrollbar-color: #ab879f #281934; }
+.library .filters { margin-top: 15px; }
+@media (max-width: 650px) {
+  .library .book .cover, .kids-zone .book .cover {
+    display: grid;
+    grid-template-rows: auto auto auto minmax(46px, 1fr) auto;
+    min-height: 178px;
+    padding: 10px 10px 9px 15px;
+  }
+  .library .cover-title, .kids-zone .cover-title, .cover.long-title .cover-title {
+    font-size: clamp(13px, 3.65vw, 17px);
+    line-height: 1.28;
+    margin-top: 8px;
+  }
+  .library .book .cover img, .kids-zone .book .cover img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+  }
+  .cover-bottom { position: static; }
+}

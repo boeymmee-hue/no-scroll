@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2b1c3d"><meta name="description" content="No scroll — 少滑一點，多做一點。17 本主題技能書、100 個圖文章節與兒童專區，從縫紉、種菇到日常手作，找回動手的樂趣。"><title>No scroll — 技能樂園</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=realm-2"><link rel="stylesheet" href="park.css?v=realm-2"><link rel="stylesheet" href="realm.css?v=realm-2b"><link rel="stylesheet" href="tools.css?v=tools-1"></head>
+<body>
+<header class="site-header"><a class="brand" href="#" aria-label="No scroll 首頁">No scroll<span class="brand-dot">✳</span></a><nav aria-label="主選單"><a href="#library">技能書櫃</a><a href="#kids">小小魔法師</a><button id="saved-nav">我的收藏 <span id="saved-count">0</span></button><button id="motion-toggle" aria-pressed="true" aria-label="魔法動畫已開啟，按此關閉">✧ 動畫</button><button class="about-link" id="about-open">關於這裡 ↗</button></nav></header>
+<main>
+<section id="park" class="park-welcome" aria-labelledby="welcome-title">
+  <div class="welcome-particles" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="welcome-content">
+    <h1 id="welcome-title">每日留一點時間，<wbr>學一樣新技能。</h1>
+    <div class="park-actions">
+      <a class="park-ticket" href="#daily-plan">開始今日練習 <span aria-hidden="true">↗</span></a>
+      <button class="park-surprise" id="surprise">隨機揀一本 <span aria-hidden="true">✧</span></button>
+    </div>
+  </div>
+</section>
+<section id="daily-plan" class="daily-plan" aria-labelledby="daily-title">
+  <div class="daily-head">
+    <div><p class="park-kicker">TODAY'S TICKET</p><h2 id="daily-title">今日練習路線</h2></div>
+    <div class="hour-choices" role="group" aria-label="練習時段">
+      <button type="button" data-hours="1" aria-pressed="false">1 小時</button>
+      <button type="button" data-hours="2" aria-pressed="true">2 小時</button>
+      <button type="button" data-hours="3" aria-pressed="false">3 小時</button>
+    </div>
+  </div>
+  <p id="daily-summary" class="daily-summary" aria-live="polite"></p>
+  <ol id="daily-stops" class="daily-stops"></ol>
+</section>
+<section id="library" class="library">
+<div class="realm-gateway library-gateway">
+  <img src="assets/library-realm.jpg" alt="" loading="lazy" width="1536" height="1024">
+  <div class="gateway-copy"><p class="eyebrow">✦ THE LIBRARY CASTLE</p><h2>技能書櫃</h2><p>14 本技能書 · 91 個練習</p></div>
+</div>
+<div class="section-heading library-toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="找技能、工具、靈感…" aria-label="搜尋技能或工具"><kbd>/</kbd></label></div><div class="filters"><div class="tabs" role="group" aria-label="技能分類"><button class="active" data-category="全部">所有技能書 <span>14</span></button><button data-category="布藝修補">布藝修補</button><button data-category="種植自然">種植自然</button><button data-category="紙藝創作">紙藝創作</button><button data-category="廚房手作">廚房手作</button><button data-category="生活小工">生活小工</button><button data-category="汽車保養">汽車保養</button><button data-category="深層清潔">深層清潔</button><button data-category="髮型手作">髮型手作</button><button data-category="書本創作">書本創作</button><button data-category="影像創作">影像創作</button><button data-category="程式設計">程式設計</button><button data-category="野外求生">野外求生</button><button data-category="Rap 節奏">Rap 節奏</button><button data-category="歌唱練習">歌唱練習</button></div><div class="filter-extras"><label><input id="quick" type="checkbox"> 30 分鐘內</label><button id="saved-filter" aria-pressed="false">♡ 已收藏</button></div></div><div class="results-line"><span id="result-count" aria-live="polite">14 本技能書，等你翻開</span><span>按一下書本，先看看目錄 ↗</span></div><div id="books" class="books"></div><div id="empty" class="empty" hidden><span>⌕</span><h3>這一格暫時空着。</h3><p>試試其他關鍵字，或看看全部手冊。</p><button id="reset" class="primary">重設篩選</button></div><div class="library-bottom"><a href="#park">返回頁首 ↑</a></div></section>
+<section id="kids" class="kids-zone"><div class="realm-gateway kids-gateway">
+  <img src="assets/kids-realm.jpg" alt="" loading="lazy" width="1536" height="1024">
+  <div class="gateway-copy"><p class="eyebrow">✦ THE ENCHANTED GARDEN</p><h2>小小魔法師</h2><p>做手作、講故事、探索自然。</p><div class="kids-badges"><span>建議 6–9 歲</span><span>大人陪同</span></div></div>
+</div><div id="kids-books" class="books" aria-label="小朋友專屬書櫃"></div><p class="kids-footnote">每個孩子的步伐不同，年齡只是參考。剪紙、散步和材料準備由大人陪同；完成小任務，就去玩真實的世界。</p></section></main>
+<footer><a class="brand" href="#">No scroll<span class="brand-dot">✳</span></a><p>少滑一點，多做一點。<br><span>A little library for a more hands-on life.</span></p><span>MADE FOR THE OFFLINE HOURS · 2026</span></footer>
+<dialog id="manual"><button class="close" id="manual-close" aria-label="關閉手冊">✕</button><div id="manual-content"></div><div id="spark-burst" aria-hidden="true"></div></dialog>
+<dialog id="tool-dialog" aria-labelledby="tool-dialog-title">
+  <button class="close" type="button" id="tool-dialog-close" aria-label="關閉工具詳情" autofocus>✕</button>
+  <p class="eyebrow">✧ 工具包</p>
+  <h2 id="tool-dialog-title"></h2>
+  <p id="tool-dialog-kind" class="tool-kind"></p>
+  <h3>在哪裡找</h3>
+  <p id="tool-dialog-where"></p>
+  <h3>準備提示</h3>
+  <p id="tool-dialog-note"></p>
+  <a id="tool-dialog-link" class="tool-source-link" target="_blank" rel="noopener noreferrer" hidden></a>
+</dialog>
+<dialog id="about"><button class="close" id="about-close" aria-label="關閉介紹">✕</button><p class="eyebrow">A SMALL CORNER OF THE INTERNET</p><h2>一個幫你離線的網站。</h2><p>No scroll 是一本可以翻開的生活提案。沒有動態消息，也沒有無限載入；只有 17 本主題技能書，以及 100 個可以動手做的小章節，包括專屬兒童書櫃。</p><p>每本書內有多個教學章節，各有準備清單、時間估算、插圖和四個入門步驟。時間是初學者估算，等待時間另列。使用工具及器材時，請先閱讀原廠說明。</p><p>收藏、勾選紀錄與創作文字只儲存在這部裝置的瀏覽器。創作稿可以下載備份；網站不接收你的文字或影片。毋須登入。清除瀏覽器資料亦會清除紀錄。</p><p>動手時間以進度條顯示，和步驟完成度分開計算。開啟計時時，每投入約 90 秒會隨機送上一句鼓勵，可以在手冊中關閉。魔法動畫可從頂部關閉，亦會尊重裝置的減少動態設定。</p><button id="clear-progress" class="text-button">清除這部裝置的收藏、進度和創作文字</button></dialog>
+<div class="magic-dust" aria-hidden="true"><i style="--i:0">✧</i><i style="--i:1">✧</i><i style="--i:2">✧</i><i style="--i:3">✧</i><i style="--i:4">✧</i><i style="--i:5">✧</i><i style="--i:6">✧</i><i style="--i:7">✧</i><i style="--i:8">✧</i><i style="--i:9">✧</i><i style="--i:10">✧</i><i style="--i:11">✧</i></div><div id="toast" popover="manual" role="status" aria-live="polite"></div><script src="data.js?v=tools-1"></script><script src="topics.js?v=realm-2"></script><script src="magic.js?v=realm-2"></script><script src="park.js?v=realm-2"></script><script src="tool-catalog.js?v=tools-1"></script><script src="tool-kit.js?v=tools-1"></script><script src="app.js?v=tools-1"></script>
+</body></html>
