@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="165" viewBox="0 0 200 165">
+<defs>
+ <linearGradient id="attraction-face" x2=".77" y2="1"><stop stop-color="#d8d8d4"/><stop offset=".52" stop-color="#89a5d3"/><stop offset="1" stop-color="#798ab7"/></linearGradient>
+ <linearGradient id="attraction-edge" x2=".2" y2="1"><stop stop-color="#89a5d3"/><stop offset="1" stop-color="#616092"/></linearGradient>
+ <filter id="object-depth" x="-18%" y="-16%" width="140%" height="145%" color-interpolation-filters="sRGB"><feDropShadow dx="1.5" dy="4" stdDeviation="2.1" flood-color="#331c45" flood-opacity=".37"/></filter>
+ <filter id="base-depth" x="-20%" y="-75%" width="140%" height="250%"><feGaussianBlur stdDeviation="3"/></filter>
+ <linearGradient id="clay-a4bcb1" x2=".76" y2="1"><stop stop-color="#bfcdbc"/><stop offset=".48" stop-color="#a4bcb1"/><stop offset="1" stop-color="#8a9098"/></linearGradient><linearGradient id="clay-ded7b8" x2=".76" y2="1"><stop stop-color="#e8e0c1"/><stop offset=".48" stop-color="#ded7b8"/><stop offset="1" stop-color="#b3a49d"/></linearGradient><linearGradient id="clay-d2b67f" x2=".76" y2="1"><stop stop-color="#e0c999"/><stop offset=".48" stop-color="#d2b67f"/><stop offset="1" stop-color="#ab8c75"/></linearGradient>
+</defs>
+<ellipse cx="101" cy="140" rx="62" ry="8" fill="#352044" opacity=".23" filter="url(#base-depth)"/>
+<rect x="31" y="30" width="139" height="103" rx="30" fill="url(#attraction-edge)"/>
+<rect x="31" y="22" width="139" height="102" rx="30" fill="url(#attraction-face)" stroke="#fff2d9" stroke-width="1.8"/>
+<rect x="37" y="28" width="127" height="90" rx="25" fill="none" stroke="#fff5df" opacity=".42"/>
+<svg x="36" y="17" width="128" height="111" viewBox="0 0 200 165" overflow="visible" fill="none"><g filter="url(#object-depth)"><g stroke="#48513b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path fill="url(#clay-a4bcb1)" d="M67 46h60l12 90H55z"/><path fill="url(#clay-ded7b8)" d="M78 29h36v19H78z"/><path d="M75 80q23-13 46 0m-46 0 23 31 23-31M98 80v30m0-49v9m-26 36 9-5m34 0 9 5"/><path fill="url(#clay-d2b67f)" d="m143 53 25 22-8 10-25-22z"/><path d="M146 54q10-12 17-5m-19 35-3 17"/></g><path d="M35 148q65 6 133-1" stroke="#48513b" opacity=".25" stroke-width="1.4"/></g></svg>
+<path d="M168 17q2 9 10 11-8 2-10 10-2-8-10-10 8-2 10-11Z" fill="#fff1c9"/>
+<circle cx="30" cy="105" r="2.2" fill="#ffe4a7"/>
+</svg>

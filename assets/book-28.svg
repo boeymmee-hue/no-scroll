@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="165" viewBox="0 0 200 165">
+<defs>
+ <linearGradient id="attraction-face" x2=".77" y2="1"><stop stop-color="#e8d4d4"/><stop offset=".52" stop-color="#b99ad3"/><stop offset="1" stop-color="#9e81b7"/></linearGradient>
+ <linearGradient id="attraction-edge" x2=".2" y2="1"><stop stop-color="#b99ad3"/><stop offset="1" stop-color="#775b92"/></linearGradient>
+ <filter id="object-depth" x="-18%" y="-16%" width="140%" height="145%" color-interpolation-filters="sRGB"><feDropShadow dx="1.5" dy="4" stdDeviation="2.1" flood-color="#331c45" flood-opacity=".37"/></filter>
+ <filter id="base-depth" x="-20%" y="-75%" width="140%" height="250%"><feGaussianBlur stdDeviation="3"/></filter>
+ <linearGradient id="clay-b8a17c" x2=".76" y2="1"><stop stop-color="#cdba97"/><stop offset=".48" stop-color="#b8a17c"/><stop offset="1" stop-color="#987d72"/></linearGradient><linearGradient id="clay-dfc89e" x2=".76" y2="1"><stop stop-color="#e9d5ae"/><stop offset=".48" stop-color="#dfc89e"/><stop offset="1" stop-color="#b4998b"/></linearGradient><linearGradient id="clay-9da080" x2=".76" y2="1"><stop stop-color="#bab99a"/><stop offset=".48" stop-color="#9da080"/><stop offset="1" stop-color="#857d75"/></linearGradient>
+</defs>
+<ellipse cx="101" cy="140" rx="62" ry="8" fill="#352044" opacity=".23" filter="url(#base-depth)"/>
+<rect x="31" y="30" width="139" height="103" rx="30" fill="url(#attraction-edge)"/>
+<rect x="31" y="22" width="139" height="102" rx="30" fill="url(#attraction-face)" stroke="#fff2d9" stroke-width="1.8"/>
+<rect x="37" y="28" width="127" height="90" rx="25" fill="none" stroke="#fff5df" opacity=".42"/>
+<svg x="36" y="17" width="128" height="111" viewBox="0 0 200 165" overflow="visible" fill="none"><g filter="url(#object-depth)"><g stroke="#48513b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path fill="url(#clay-b8a17c)" d="M43 35h116v106H43z"/><path fill="url(#clay-dfc89e)" d="m52 34 25-6 72 5v101l-72-5-25 6z"/><path d="M77 30v100m-25-81h25m-25 69h25"/><path fill="url(#clay-9da080)" d="M94 52h41v42H94z"/><path d="m100 69 12 12 17-18"/></g><path d="M35 148q65 6 133-1" fill="none" stroke="#48513b" opacity=".25" stroke-width="1.4"/></g></svg>
+<path d="M168 17q2 9 10 11-8 2-10 10-2-8-10-10 8-2 10-11Z" fill="#fff1c9"/>
+<circle cx="30" cy="105" r="2.2" fill="#ffe4a7"/>
+</svg>

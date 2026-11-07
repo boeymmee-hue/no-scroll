@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="165" viewBox="0 0 200 165">
+<defs>
+ <linearGradient id="attraction-face" x2=".77" y2="1"><stop stop-color="#e6d5d5"/><stop offset=".52" stop-color="#b49bd4"/><stop offset="1" stop-color="#9a82b7"/></linearGradient>
+ <linearGradient id="attraction-edge" x2=".2" y2="1"><stop stop-color="#b49bd4"/><stop offset="1" stop-color="#755b92"/></linearGradient>
+ <filter id="object-depth" x="-18%" y="-16%" width="140%" height="145%" color-interpolation-filters="sRGB"><feDropShadow dx="1.5" dy="4" stdDeviation="2.1" flood-color="#331c45" flood-opacity=".37"/></filter>
+ <filter id="base-depth" x="-20%" y="-75%" width="140%" height="250%"><feGaussianBlur stdDeviation="3"/></filter>
+ <linearGradient id="clay-c7b2ce" x2=".76" y2="1"><stop stop-color="#d8c6d0"/><stop offset=".48" stop-color="#c7b2ce"/><stop offset="1" stop-color="#a389ad"/></linearGradient><linearGradient id="clay-e6d5b0" x2=".76" y2="1"><stop stop-color="#eedebb"/><stop offset=".48" stop-color="#e6d5b0"/><stop offset="1" stop-color="#b9a297"/></linearGradient><linearGradient id="clay-a8bb95" x2=".76" y2="1"><stop stop-color="#c2cca8"/><stop offset=".48" stop-color="#a8bb95"/><stop offset="1" stop-color="#8d9084"/></linearGradient><linearGradient id="clay-d8b979" x2=".76" y2="1"><stop stop-color="#e4cb95"/><stop offset=".48" stop-color="#d8b979"/><stop offset="1" stop-color="#af8e70"/></linearGradient>
+</defs>
+<ellipse cx="101" cy="140" rx="62" ry="8" fill="#352044" opacity=".23" filter="url(#base-depth)"/>
+<rect x="31" y="30" width="139" height="103" rx="30" fill="url(#attraction-edge)"/>
+<rect x="31" y="22" width="139" height="102" rx="30" fill="url(#attraction-face)" stroke="#fff2d9" stroke-width="1.8"/>
+<rect x="37" y="28" width="127" height="90" rx="25" fill="none" stroke="#fff5df" opacity=".42"/>
+<svg x="36" y="17" width="128" height="111" viewBox="0 0 200 165" overflow="visible" fill="none"><g filter="url(#object-depth)"><g stroke="#48513b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path fill="url(#clay-c7b2ce)" d="M40 40h125v91H40z"/><path fill="url(#clay-e6d5b0)" d="M51 49h103v65H51z"/><path fill="url(#clay-a8bb95)" d="m84 96-4-31 22-12 24 13-4 30z"/><path d="m65 138 10-12m-24 7 5-12m68 17 9-11m12 11 6-12"/><path fill="url(#clay-d8b979)" d="m99 28 5-11 5 11 12 2-9 8 2 12-10-6-10 6 2-12-9-8z"/></g><path d="M35 148q65 6 133-1" stroke="#48513b" opacity=".25"/></g></svg>
+<path d="M168 17q2 9 10 11-8 2-10 10-2-8-10-10 8-2 10-11Z" fill="#fff1c9"/>
+<circle cx="30" cy="105" r="2.2" fill="#ffe4a7"/>
+</svg>
