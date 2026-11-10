@@ -161,3 +161,71 @@
   .shelf-bay h3 { margin-bottom: 10px; }
   .spine-slot { height: 187px; }
 }
+
+.step figure:has(.step-symbol) {
+  display: grid;
+  place-items: center;
+  color: #543556;
+}
+.step-symbol {
+  width: 52%;
+  height: 52%;
+}
+
+.lesson-videos {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.lesson-videos h3 { margin: 0; }
+.video-note, .clip-focus { font-size: 12px; line-height: 1.65; color: #5b4665; }
+.video-note { margin: 5px 0 12px; }
+.lesson-clip {
+  margin: 8px 0;
+  border: 1px solid #d2b6c6;
+  border-radius: 10px;
+  background: #fff7e5;
+}
+.lesson-clip summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #422949;
+}
+.lesson-clip summary::-webkit-details-marker { display: none; }
+.lesson-clip summary:focus-visible {
+  outline: 2px solid #77547c;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+.lesson-clip summary strong, .lesson-clip summary small { display: block; }
+.lesson-clip summary small { color: #644c69; margin-top: 2px; }
+.clip-play {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  background: #5d3b66;
+  color: #fff4d5;
+  font-size: 12px;
+}
+.lesson-clip[open] .clip-play { transform: rotate(90deg); }
+.clip-focus { margin: 0; padding: 1px 12px 10px; }
+.clip-player { padding: 0 12px 12px; }
+.clip-player iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  border: 0;
+  border-radius: 6px;
+  background: #251c30;
+}
+@media print {
+  .lesson-videos { display: none; }
+}

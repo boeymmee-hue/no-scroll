@@ -8,7 +8,7 @@ A responsive, illustrated Traditional Chinese bookshelf with English chapter tit
 
 Open `index.html` in a browser, or serve the folder with any static web server. There is no build step, account, API key or database. All content and illustrations are local. Google Fonts can load when online, with system fallbacks.
 
-To publish on GitHub Pages, create a repository called `no-scroll`, upload the **contents** of this folder to the root, then select **Settings → Pages → Deploy from a branch → main → / (root)**. Keep `index.html`, `style.css`, `park.css`, `realm.css`, `tools.css`, `library.css`, `library.js`, `data.js`, `topics.js`, `magic.js`, `park.js`, `tool-catalog.js`, `tool-kit.js`, `app.js`, `.nojekyll` and the `assets/` folder together. GitHub displays the Pages address when publishing completes.
+To publish on GitHub Pages, create a repository called `no-scroll`, upload the **contents** of this folder to the root, then select **Settings → Pages → Deploy from a branch → main → / (root)**. Keep `index.html`, `style.css`, `park.css`, `realm.css`, `tools.css`, `library.css`, `library.js`, `step-art.js`, `lesson-video.js`, `data.js`, `topics.js`, `magic.js`, `park.js`, `tool-catalog.js`, `tool-kit.js`, `app.js`, `.nojekyll` and the `assets/` folder together. GitHub displays the Pages address when publishing completes.
 
 ## The experience
 
@@ -16,6 +16,7 @@ To publish on GitHub Pages, create a repository called `no-scroll`, upload the *
 - **Tool kit.** Select a tool name to open its purchase, download, borrowing or preparation details. The checkboxes track readiness independently.
 
 - **One book per subject.** Select a spine to open its chapter or a table of contents for longer books. Search covers book titles, chapter titles and materials. The children’s entrance filters the same bookshelf to age-guided activities with adult help.
+- **Visual lessons.** Every step has a matching icon or a technique illustration. Selected chapters have inline video references loaded when opened.
 - **Guided creation.** Write an eight-page book or make an approximately one-minute film in five stages. Each stage has a tangible outcome, checklist and editable notes. The children’s story book includes a three-stage project. Completing a stage enables its next-stage button, while the contents page keeps every stage accessible. Export all project notes as a `.txt` draft or completed record. Actual book layout, illustrations and film production happen on paper or in the visitor’s tools.
 - **Time and completion are separate.** A pauseable time progress bar shows time invested, and a separate checklist tracks the steps actually completed. The time bar remembers the last position on this browser; reopening a chapter resumes in a paused state. The timer only runs in an opened chapter after Start. About every 90 seconds of active time, the site offers a random encouragement; it can be turned off, and a manual encouragement button is available.
 - **Gentle magic.** Floating stars, an illustrated owl, book openings and small completion effects. The header offers an optional bell soundtrack synthesized in the browser. Turn off decorative motion from the header. System reduced-motion preferences take precedence. The website has no endless feed or audio autoplay.
