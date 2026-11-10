@@ -13,7 +13,7 @@ const compassDemo = {
   publisher: 'REI', focus: '留意持平、對準磁針及由地標讀方位的示範。'
 };
 
-// Only curated videos are shown. The remaining lessons need no player.
+// External references supplement the locally hosted guide for each chapter.
 const lessonVideos = {
   1: [
     { id: 'jpk1vg5_Ppg', title: '繞梭芯及裝底線', publisher: 'Brother', focus: '以 GS／LX／AS 系列作示範，操作前核對自己機型。' },
@@ -53,10 +53,19 @@ const lessonVideos = {
 
 function lessonVideoPanel(chapterIds) {
   const videos = chapterIds.flatMap(id => lessonVideos[id] || []);
-  if (!videos.length) return '';
+  const chapter = BOOKS.find(book => book.id === chapterIds[0]);
+  const guide = `assets/guide-${String(chapter.id).padStart(3, '0')}.mp4`;
   return `<section class="lesson-videos" aria-labelledby="lesson-video-heading">
-    <h3 id="lesson-video-heading">參考影片</h3>
-    <p class="video-note">撳開先載入 YouTube 播放器，可以喺書入面觀看。</p>
+    <h3 id="lesson-video-heading" tabindex="-1">圖解短片</h3>
+    <p class="video-note">每章都有粵語旁白同中文字幕，撳開就可以喺書內睇。</p>
+    <details class="lesson-clip" name="lesson-clip" data-guide="${guide}">
+      <summary>
+        <span class="clip-play" aria-hidden="true">▶</span>
+        <span><strong>${escapeText(chapter.title)}</strong><small>No scroll 圖解 · 粵語旁白</small></span>
+      </summary>
+      <div class="clip-player"></div>
+    </details>
+    ${videos.length ? `<h4 class="clip-subheading">延伸示範</h4>
     ${videos.map(clip => `
       <details class="lesson-clip" name="lesson-clip" data-video-id="${clip.id}">
         <summary>
@@ -65,21 +74,47 @@ function lessonVideoPanel(chapterIds) {
         </summary>
         <p class="clip-focus">${escapeText(clip.focus)}</p>
         <div class="clip-player"></div>
-      </details>`).join('')}
+      </details>`).join('')}` : ''}
   </section>`;
+}
+
+function clearClipPlayer(player) {
+  player.querySelector('video')?.pause();
+  player.replaceChildren();
 }
 
 function initLessonVideos() {
   const manual = $('#manual');
+  manual.addEventListener('click', event => {
+    if (event.target.closest('[data-jump-to-video]')) $('#lesson-video-heading').focus();
+  });
   manual.addEventListener('toggle', event => {
     const clip = event.target;
-    if (!clip.matches('details[data-video-id]')) return;
+    if (!clip.matches('.lesson-clip')) return;
     const player = clip.querySelector('.clip-player');
     if (!clip.open || !manual.open) {
-      player.replaceChildren();
+      clearClipPlayer(player);
       return;
     }
     if (player.firstChild) return;
+
+    if (clip.dataset.guide) {
+      const video = document.createElement('video');
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = 'metadata';
+      video.setAttribute('aria-label', clip.querySelector('strong').textContent);
+      video.addEventListener('error', () => {
+        if (video.parentElement !== player) return;
+        const message = document.createElement('p');
+        message.className = 'clip-focus';
+        message.textContent = '短片暫時未能載入。可以合上後再撳開重試。';
+        player.replaceChildren(message);
+      }, { once: true });
+      video.src = clip.dataset.guide;
+      player.append(video);
+      return;
+    }
 
     const frame = document.createElement('iframe');
     frame.title = clip.querySelector('strong').textContent;
@@ -93,7 +128,7 @@ function initLessonVideos() {
     if (manual.open) return;
     for (const clip of manual.querySelectorAll('.lesson-clip[open]')) {
       clip.open = false;
-      clip.querySelector('.clip-player').replaceChildren();
+      clearClipPlayer(clip.querySelector('.clip-player'));
     }
   });
 }

@@ -178,6 +178,7 @@
   border-top: 1px solid var(--line);
 }
 .lesson-videos h3 { margin: 0; }
+.clip-subheading { margin: 16px 0 4px; color: #543556; }
 .video-note, .clip-focus { font-size: 12px; line-height: 1.65; color: #5b4665; }
 .video-note { margin: 5px 0 12px; }
 .lesson-clip {
@@ -217,7 +218,7 @@
 .lesson-clip[open] .clip-play { transform: rotate(90deg); }
 .clip-focus { margin: 0; padding: 1px 12px 10px; }
 .clip-player { padding: 0 12px 12px; }
-.clip-player iframe {
+.clip-player iframe, .clip-player video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
