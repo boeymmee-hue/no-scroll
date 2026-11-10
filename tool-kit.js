@@ -1,7 +1,7 @@
 'use strict';
 
 function toolKitPanel(book) {
-  const prepared = state.tools[book.id] || [];
+  const prepared = state.tools[progressKey(book)] || [];
   const rows = book.tools.map((tool, index) => {
     const name = escapeText(tool);
     return `<li class="tool-kit-row">

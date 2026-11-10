@@ -183,9 +183,9 @@ const TOPICS = [
       74,
       75
     ],
-    "intro": "由一句想法出發，完成分鏡、拍攝、剪輯與一次小放映。每一站都知道下一步。",
+    "intro": "由企劃、分鏡到實拍，學會動作接剪、分軌混音和輸出成品。",
     "project": true,
-    "outcome": "約 60 秒短片 ＋ 可下載的分鏡筆記",
+    "outcome": "完成一段約 60 秒的短片，包含一次連貫動作接剪和清楚的混音，並匯出一份可獨立播放的 MP4。",
     "shelf": "影像與設計"
   },
   {
@@ -402,11 +402,11 @@ const TOPICS = [
   },
   {
     "id": "skill-110",
-    "title": "寫一張視覺標籤",
-    "en": "Design a readable label",
+    "title": "做看得清的雙語路牌",
+    "en": "Design a bilingual wayfinding sign",
     "category": "紙藝美術",
     "shelf": "紙藝美術",
-    "intro": "做一張三步外仍可辨認的分類標籤。",
+    "intro": "練習字級、箭嘴和閱讀層級，做一塊在走動時也看得懂的指示牌。",
     "chapters": [
       110
     ]
@@ -424,14 +424,15 @@ const TOPICS = [
   },
   {
     "id": "skill-112",
-    "title": "畫四格構圖草案",
-    "en": "Thumbnail composition",
+    "title": "用三塊明暗設計畫面焦點",
+    "en": "Compose with three value masses",
     "category": "紙藝美術",
     "shelf": "紙藝美術",
-    "intro": "把同一物件用四種構圖試畫，再選最佳一格。",
+    "intro": "在細節之前先安排黑、灰、白，學會用最大反差引導視線。",
     "chapters": [
       112
-    ]
+    ],
+    "spineTitle": "三塊明暗的構圖"
   },
   {
     "id": "skill-113",
@@ -490,44 +491,46 @@ const TOPICS = [
   },
   {
     "id": "skill-118",
-    "title": "量出一人份食譜",
-    "en": "Scale a recipe",
+    "title": "用焗模面積換算蛋糕份量",
+    "en": "Scale batter by pan area",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "練習把四人份食譜改成一人份。",
+    "intro": "用底面面積計算縮方係數，讓改用小模後麵糊深度接近原食譜。",
     "chapters": [
       118
-    ]
+    ],
+    "spineTitle": "按焗模換算蛋糕"
   },
   {
     "id": "skill-119",
-    "title": "做一張冰箱存貨卡",
-    "en": "Make a fridge inventory",
+    "title": "量出雪櫃冷點與回溫",
+    "en": "Map safe fridge storage with a thermometer",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "為容易忘記的食材建立先用次序。",
+    "intro": "用實際溫度找安全存放區，分辨空氣瞬間波動與長時間偏暖。",
     "chapters": [
       119
     ]
   },
   {
     "id": "skill-120",
-    "title": "均勻切出蔬菜丁",
-    "en": "Dice vegetables evenly",
+    "title": "把紅蘿蔔切成六毫米方丁",
+    "en": "Cut consistent vegetable dice",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "從厚片、條狀到方丁，練習一致尺寸。",
+    "intro": "由方柱切到同尺寸方丁，練穩定砧板、爪形握法和切片厚度。",
     "chapters": [
       120
-    ]
+    ],
+    "spineTitle": "切六毫米方丁"
   },
   {
     "id": "skill-121",
-    "title": "調一杯檸檬飲",
-    "en": "Balance a lemon drink",
+    "title": "煮糖漿做檸檬原液",
+    "en": "Make lemon cordial concentrate",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "用小批試味找出酸度與濃淡的關係。",
+    "intro": "用重量比控制甜酸，把一次煮好的檸檬原液稀釋成穩定味道。",
     "chapters": [
       121
     ]
@@ -545,143 +548,150 @@ const TOPICS = [
   },
   {
     "id": "skill-123",
-    "title": "燕麥配料盲測",
-    "en": "Compare oat toppings",
+    "title": "從生燕麥煮出鋼切燕麥粥",
+    "en": "Cook steel-cut oats from scratch",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "比較配料比例與口感，做出固定的早餐組合。",
+    "intro": "由生鋼切燕麥煮一人份粥，學會看微滾、試熟度，以及用熱水救回太稠的粥。",
     "chapters": [
       123
-    ]
+    ],
+    "spineTitle": "鋼切燕麥粥"
   },
   {
     "id": "skill-124",
-    "title": "組合一餐便當",
-    "en": "Plan a balanced lunch box",
+    "title": "用薄粉殼煎出脆豆腐",
+    "en": "Pan-fry crisp tofu with a starch crust",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "練習讓便當分格清楚並安排保存方式。",
+    "intro": "練表面乾燥、薄上粉與脆殼定型，讓豆腐翻面時不掉皮。",
     "chapters": [
       124
-    ]
+    ],
+    "spineTitle": "薄脆煎豆腐"
   },
   {
     "id": "skill-125",
-    "title": "用秤練咖啡粉水比",
-    "en": "Coffee ratio practice",
+    "title": "用三段注水調整手沖萃取",
+    "en": "Dial in pour-over extraction",
     "category": "廚房與飲食",
     "shelf": "廚房與飲食",
-    "intro": "以克數代替目測，找到可重複的手沖比例。",
+    "intro": "用總時間和味道診斷流速，以只改一個變因的方式修正過淡或苦澀。",
     "chapters": [
       125
-    ]
+    ],
+    "spineTitle": "調整手沖萃取"
   },
   {
     "id": "skill-126",
-    "title": "五分鐘物件回家圖",
-    "en": "Map storage homes",
+    "title": "裝一套不用鑽牆的掛鉤",
+    "en": "Fit a removable wall hook",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "把每天會用的小物放在最容易歸位的地方。",
+    "intro": "學會用物件重量與牆面材質選掛鉤，再按拉伸方向拆除。",
     "chapters": [
       126
     ]
   },
   {
     "id": "skill-127",
-    "title": "衣櫃容量分區",
-    "en": "Zone a wardrobe",
+    "title": "用對角線校方紙盒",
+    "en": "Square a box with diagonals",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "按使用頻率設計衣櫃位置。",
+    "intro": "利用兩條對角線發現變形，做一個角落加固後仍能方正的盒。",
     "chapters": [
       127
     ]
   },
   {
     "id": "skill-128",
-    "title": "做一張清潔輪值表",
-    "en": "Build a cleaning rotation",
+    "title": "辨認水垢和油膜再清潔",
+    "en": "Diagnose two kinds of surface residue",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "把一整屋清潔拆成可輪流執行的小任務。",
+    "intro": "先診斷污漬，再選表面相容的清潔方法，避免同一瓶清潔劑到處用。",
     "chapters": [
       128
     ]
   },
   {
     "id": "skill-129",
-    "title": "量出家具搬動路線",
-    "en": "Measure a furniture route",
+    "title": "用等比例紙樣模擬搬傢俬",
+    "en": "Model a furniture turn to scale",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "先用量度找出會卡住的門與轉角。",
+    "intro": "門口夠闊也可能轉不過彎；用平面比例模型先找出需要調整的轉角。",
     "chapters": [
       129
-    ]
+    ],
+    "spineTitle": "紙樣模擬搬傢俬"
   },
   {
     "id": "skill-130",
-    "title": "物件借還紀錄",
-    "en": "Create a lending log",
+    "title": "把鬆動螺絲配到正確牙距",
+    "en": "Identify a screw thread before replacing it",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "讓共享工具借出後仍找得到。",
+    "intro": "量外徑和牙距辨認常見螺絲，避免直徑相近但旋兩圈就卡死。",
     "chapters": [
       130
-    ]
+    ],
+    "spineTitle": "螺絲牙距配對"
   },
   {
     "id": "skill-131",
-    "title": "做一張衣物洗護速查",
-    "en": "Read laundry symbols",
+    "title": "讀懂洗護符號再做色牢度試布",
+    "en": "Test washable fabric for dye transfer",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "用自己的衣物標籤整理一張洗護表。",
+    "intro": "把洗護標籤與濕擦測試結合，避免一件新衣染到整機淺色衣服。",
     "chapters": [
       131
-    ]
+    ],
+    "spineTitle": "洗護與色牢度"
   },
   {
     "id": "skill-132",
-    "title": "縫標籤辨識電線",
-    "en": "Label household cables",
+    "title": "找出充電慢是線還是火牛",
+    "en": "Isolate a slow USB charge",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "用兩端同名標籤讓充電線更容易辨識。",
+    "intro": "用交叉替換把慢充原因縮小到線材、充電器或裝置設定。",
     "chapters": [
       132
-    ]
+    ],
+    "spineTitle": "慢充交叉測試"
   },
   {
     "id": "skill-133",
-    "title": "租住空間交收表",
-    "en": "Make a condition checklist",
+    "title": "用斜光與比例拍清裂紋",
+    "en": "Document a crack with scale and side light",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "用有位置的照片與短句記錄房間狀態。",
+    "intro": "用定位照、特寫和同平面比例尺，把看似一條黑線的狀況拍到別人能核對。",
     "chapters": [
       133
     ]
   },
   {
     "id": "skill-134",
-    "title": "門口鞋履泥沙區",
-    "en": "Set up an entryway dirt zone",
+    "title": "換一枚椅腳止滑墊",
+    "en": "Fit a chair-foot pad",
     "category": "生活整理",
     "shelf": "生活整理",
-    "intro": "建立一個容易清理的濕鞋停放位置。",
+    "intro": "找出椅腳墊厚度不同造成的搖晃，用合適形狀與材質避免刮花地面。",
     "chapters": [
       134
     ]
   },
   {
     "id": "skill-135",
-    "title": "讀一包種子標籤",
-    "en": "Read a seed packet",
+    "title": "做一輪種子發芽率測試",
+    "en": "Test germination before sowing",
     "category": "種植與戶外",
     "shelf": "種植與戶外",
-    "intro": "由包裝找出播種深度、光線和發芽時間。",
+    "intro": "用十粒樣本估算發芽率，決定一格播一粒還是加播。",
     "chapters": [
       135
     ]
@@ -699,58 +709,61 @@ const TOPICS = [
   },
   {
     "id": "skill-137",
-    "title": "留一張採葉前後表",
-    "en": "Track herb harvest",
+    "title": "從節位摘頂讓羅勒分枝",
+    "en": "Prune basil above a node",
     "category": "種植與戶外",
     "shelf": "種植與戶外",
-    "intro": "用記錄比較分次採葉和一次剪太多的差別。",
+    "intro": "找準葉節與側芽，讓採收同時促進分枝，學會避開剪錯的高度。",
     "chapters": [
       137
     ]
   },
   {
     "id": "skill-138",
-    "title": "用照片重訪同一棵樹",
-    "en": "Repeat a nature photo",
+    "title": "用等高線找出哪條路最陡",
+    "en": "Read slopes from contour lines",
     "category": "種植與戶外",
     "shelf": "種植與戶外",
-    "intro": "用固定構圖記錄一個季節的變化。",
+    "intro": "把等高線間距轉成爬升率，事前看懂地圖上看似很短卻很陡的一段。",
     "chapters": [
       138
-    ]
+    ],
+    "spineTitle": "等高線看坡度"
   },
   {
     "id": "skill-139",
-    "title": "公園路線比較卡",
-    "en": "Compare two park routes",
+    "title": "用指南針循方位走三段",
+    "en": "Follow a compass bearing in a safe field",
     "category": "種植與戶外",
     "shelf": "種植與戶外",
-    "intro": "以路線難度和時間選擇適合同行者的散步。",
+    "intro": "在安全空地把指南針讀數變成可重走的路線，練辨認受金屬干擾的讀數。",
     "chapters": [
       139
     ]
   },
   {
     "id": "skill-140",
-    "title": "乾袋分裝演練",
-    "en": "Pack a dry bag",
+    "title": "用兩種結搭一幅練習天幕",
+    "en": "Rig a tarp with two different knots",
     "category": "種植與戶外",
     "shelf": "種植與戶外",
-    "intro": "把需要保持乾爽的備用衣物獨立分裝。",
+    "intro": "在無風低位把固定端和可調端分開，學會張緊後快速拆下。",
     "chapters": [
       140
-    ]
+    ],
+    "spineTitle": "用繩結搭天幕"
   },
   {
     "id": "skill-141",
-    "title": "一句話摘要",
-    "en": "Write a one-sentence summary",
+    "title": "把混亂段落變成決策摘要",
+    "en": "Write a decision-first summary",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "將一段文字濃縮成可核對的主旨。",
+    "intro": "用「決定、依據、風險、下一步」四句摘要，把報告改到讀者可以行動。",
     "chapters": [
       141
-    ]
+    ],
+    "spineTitle": "寫決策摘要"
   },
   {
     "id": "skill-142",
@@ -765,11 +778,11 @@ const TOPICS = [
   },
   {
     "id": "skill-143",
-    "title": "三幕故事練習",
-    "en": "Write a three-beat story",
+    "title": "用鋪陳與回收寫反轉",
+    "en": "Plant and pay off a story clue",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "由一個願望、一個阻礙和一個選擇寫成短故事。",
+    "intro": "把巧合結局改成讀者事後看得出伏筆、首次閱讀又不會被劇透的短篇。",
     "chapters": [
       143
     ]
@@ -787,36 +800,39 @@ const TOPICS = [
   },
   {
     "id": "skill-145",
-    "title": "寫一封清楚請求信",
-    "en": "Write an actionable request",
+    "title": "用範圍與驗收寫一份交接",
+    "en": "Write a verifiable handoff brief",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "用短主旨、單一請求和具體時限寫一封信。",
+    "intro": "把「幫我做靚張圖」改成另一個人做得出、你又驗收得到的交接。",
     "chapters": [
       145
-    ]
+    ],
+    "spineTitle": "寫可驗收的交接"
   },
   {
     "id": "skill-146",
-    "title": "一分鐘口頭講解",
-    "en": "Explain something in one minute",
+    "title": "用反例把抽象概念講清楚",
+    "en": "Explain with examples and non-examples",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "用例子講清一件自己熟悉的事。",
+    "intro": "在一分鐘內用正例和反例畫出概念的邊界，讓聽者能分類一個新例子。",
     "chapters": [
       146
-    ]
+    ],
+    "spineTitle": "用反例做講解"
   },
   {
     "id": "skill-147",
-    "title": "寫作刪字實驗",
-    "en": "Edit for brevity",
+    "title": "逐句改掉無主詞和弱動詞",
+    "en": "Revise vague sentences line by line",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "保留原意，把一段文字縮短四分之一。",
+    "intro": "用「誰做甚麼、怎樣核對」改段落，讓短句仍保留責任和因果。",
     "chapters": [
       147
-    ]
+    ],
+    "spineTitle": "改寫模糊句子"
   },
   {
     "id": "skill-148",
@@ -831,14 +847,15 @@ const TOPICS = [
   },
   {
     "id": "skill-149",
-    "title": "回饋三句式",
-    "en": "Give specific feedback",
+    "title": "把模糊指示改成可用教學",
+    "en": "Test instructions with a first-time reader",
     "category": "寫作與表達",
     "shelf": "寫作與表達",
-    "intro": "用「我看見、我感到、我建議」練習具體回饋。",
+    "intro": "用「新人照做」找出教學的缺步，學會用預期畫面和分支補洞。",
     "chapters": [
       149
-    ]
+    ],
+    "spineTitle": "測試教學指示"
   },
   {
     "id": "skill-150",
@@ -886,47 +903,51 @@ const TOPICS = [
   },
   {
     "id": "skill-154",
-    "title": "做一個檔案命名規則",
-    "en": "Name files consistently",
+    "title": "寫腳本批量改檔名前先預演",
+    "en": "Preview a batch rename with PowerShell",
     "category": "程式與數碼",
     "shelf": "程式與數碼",
-    "intro": "用日期與版本讓作品可以排序和追溯。",
+    "intro": "用零填充序號讓檔名排序正確，先看預演、處理撞名，再實際更名。",
     "chapters": [
       154
-    ]
+    ],
+    "spineTitle": "批量改檔名預演"
   },
   {
     "id": "skill-155",
-    "title": "練習比較兩版文字",
-    "en": "Compare two text versions",
+    "title": "用 Git 找回一行被改的文字",
+    "en": "Read and restore a change with Git",
     "category": "程式與數碼",
     "shelf": "程式與數碼",
-    "intro": "將內容和格式改動分開檢查。",
+    "intro": "把文字修改分成工作檔與已提交版本，學會看 diff 和預覽舊內容。",
     "chapters": [
       155
-    ]
+    ],
+    "spineTitle": "用 Git 找回文字"
   },
   {
     "id": "skill-156",
-    "title": "用試算表加總時間",
-    "en": "Sum time in a spreadsheet",
+    "title": "做一張會自動超時警示的表",
+    "en": "Build a spreadsheet time budget",
     "category": "程式與數碼",
     "shelf": "程式與數碼",
-    "intro": "用 SUM 記錄四次練習時間。",
+    "intro": "用絕對參照、SUMIF 和條件格式，做會隨輸入更新的練習預算。",
     "chapters": [
       156
-    ]
+    ],
+    "spineTitle": "自動超時警示表"
   },
   {
     "id": "skill-157",
-    "title": "寫一張重現步驟卡",
-    "en": "Write a reproducible bug report",
+    "title": "用最小重現找出前端錯誤",
+    "en": "Isolate a bug in a minimal reproduction",
     "category": "程式與數碼",
     "shelf": "程式與數碼",
-    "intro": "讓另一個人能重現同一個小問題。",
+    "intro": "由錯誤訊息追到行號，把原本很大的問題縮成一個可重現及可修好的測試檔。",
     "chapters": [
       157
-    ]
+    ],
+    "spineTitle": "最小重現除錯"
   },
   {
     "id": "skill-158",
@@ -941,88 +962,92 @@ const TOPICS = [
   },
   {
     "id": "skill-159",
-    "title": "拍三種景別",
-    "en": "Film three shot sizes",
+    "title": "用三秒開頭剪一條影片廣告",
+    "en": "Cut a 15-second video ad",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "用遠景、中景和特寫說清同一件事。",
+    "intro": "學會用成品作開場、用畫面證明賣點，再留足時間讓觀眾看完行動指示。",
     "chapters": [
       159
-    ]
+    ],
+    "spineTitle": "剪十五秒廣告"
   },
   {
     "id": "skill-160",
-    "title": "練單一光源人像",
-    "en": "Portrait with one light",
+    "title": "用反光板控制窗光陰影",
+    "en": "Shape window light with bounce",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "用光線角度改變一張人像的明暗。",
+    "intro": "用白板補光和黑板減反射，學會控制臉上明暗比例。",
     "chapters": [
       160
     ]
   },
   {
     "id": "skill-161",
-    "title": "記錄十秒環境聲",
-    "en": "Record room tone",
+    "title": "用環境聲補住對白剪口",
+    "en": "Smooth dialogue edits with room tone",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "收一段可在剪輯補空位的背景聲。",
+    "intro": "讓兩句對白之間的底噪連續，消除切口突變及生硬靜音。",
     "chapters": [
       161
     ]
   },
   {
     "id": "skill-162",
-    "title": "用跳剪縮短動作",
-    "en": "Practice jump-cut timing",
+    "title": "讓聲音先行做一個 J-cut",
+    "en": "Edit a J-cut audio lead-in",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "把二十秒日常動作剪成八秒。",
+    "intro": "用下一鏡聲音先入場，引導觀眾自然轉到新畫面。",
     "chapters": [
       162
-    ]
+    ],
+    "spineTitle": "聲音先入剪接"
   },
   {
     "id": "skill-163",
-    "title": "做字幕可讀性測試",
-    "en": "Test caption readability",
+    "title": "寫時間碼輸出一份 SRT 字幕",
+    "en": "Author and test an SRT caption file",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "讓短片字幕在小螢幕也讀得到。",
+    "intro": "學字幕編號、時間碼與分段，做一份可獨立開關的字幕檔。",
     "chapters": [
       163
-    ]
+    ],
+    "spineTitle": "寫 SRT 字幕"
   },
   {
     "id": "skill-164",
-    "title": "拍停格四步",
-    "en": "Make a short stop-motion",
+    "title": "用移動間距做停格加速",
+    "en": "Animate acceleration with spacing",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "拍八張定格照片，讓玩具移動一小段。",
+    "intro": "每格時間相同時，用逐格位置差控制速度，製作一段明顯由慢到快的移動。",
     "chapters": [
       164
     ]
   },
   {
     "id": "skill-165",
-    "title": "做兩版圖片裁切",
-    "en": "Compare two photo crops",
+    "title": "規劃一個可核對的影片廣告投放",
+    "en": "Set up a YouTube video campaign plan",
     "category": "影像與設計",
     "shelf": "影像與設計",
-    "intro": "為一張照片做兩版裁切，看出空間感差異。",
+    "intro": "用「目標 → 受眾 → 預算 → 素材 → 驗收」建立投放設定表，練習算一次有效點擊成本。",
     "chapters": [
       165
-    ]
+    ],
+    "spineTitle": "影片廣告投放"
   },
   {
     "id": "skill-166",
-    "title": "拍出四拍重音",
-    "en": "Clap a four-beat accent",
+    "title": "用反拍做四小節節奏",
+    "en": "Play a four-bar offbeat groove",
     "category": "音樂與節奏",
     "shelf": "音樂與節奏",
-    "intro": "在相同速度下輪流強調第一拍和第二拍。",
+    "intro": "把聲音放在拍與拍之間，練不被反拍拉走的穩定腳拍。",
     "chapters": [
       166
     ]
@@ -1040,22 +1065,22 @@ const TOPICS = [
   },
   {
     "id": "skill-168",
-    "title": "聽辨旋律上落",
-    "en": "Hear melodic direction",
+    "title": "從參考音唱準三度",
+    "en": "Sing and check a major third",
     "category": "音樂與節奏",
     "shelf": "音樂與節奏",
-    "intro": "先分清兩個音是上行、下行還是同音。",
+    "intro": "用音階第 1 與第 3 級建立可重找的音程，而非只靠猜上行或下行。",
     "chapters": [
       168
     ]
   },
   {
     "id": "skill-169",
-    "title": "用拍手練休止",
-    "en": "Count through rests",
+    "title": "用切分音跨過強拍",
+    "en": "Count a syncopated tie",
     "category": "音樂與節奏",
     "shelf": "音樂與節奏",
-    "intro": "休止時仍在心中數拍，讓下一個聲音準時。",
+    "intro": "把上一拍的後半音延過下一拍，理解切分音為甚麼會有重心移動。",
     "chapters": [
       169
     ]
@@ -1084,14 +1109,15 @@ const TOPICS = [
   },
   {
     "id": "skill-172",
-    "title": "整理一張排練提示卡",
-    "en": "Make a rehearsal cue card",
+    "title": "把一段人聲剪成無爆音循環",
+    "en": "Loop a vocal clip without a click",
     "category": "音樂與節奏",
     "shelf": "音樂與節奏",
-    "intro": "把練習內容縮成演出前看得懂的提示。",
+    "intro": "學用波形找零交點、短淡化和連播檢查，做一個不會「啪」一聲的音檔循環。",
     "chapters": [
       172
-    ]
+    ],
+    "spineTitle": "無爆音人聲循環"
   },
   {
     "id": "skill-173",
@@ -1120,39 +1146,41 @@ const TOPICS = [
   },
   {
     "id": "skill-175",
-    "title": "畫一個晨早順序圖",
-    "en": "Draw a morning sequence",
+    "title": "做一個只有兩種答案的猜數遊戲",
+    "en": "Build a paper binary search game",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "用圖畫將一件日常任務分成三步。",
+    "intro": "用「大一點／細一點」把範圍每輪砍半，學會用少幾條問題找答案。",
     "chapters": [
       175
     ],
     "kids": true,
     "age": "6–9 歲",
-    "adult": "大人陪同"
+    "adult": "大人陪同",
+    "spineTitle": "二分猜數遊戲"
   },
   {
     "id": "skill-176",
-    "title": "找出屋內的對稱",
-    "en": "Find household symmetry",
+    "title": "用反摺做出可驗證的鏡像",
+    "en": "Construct a paper mirror image",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "辨認左右能摺合的形狀。",
+    "intro": "用每個點到中線的距離，畫出一幅能實際摺合的鏡像圖案。",
     "chapters": [
       176
     ],
     "kids": true,
     "age": "6–9 歲",
-    "adult": "大人陪同"
+    "adult": "大人陪同",
+    "spineTitle": "反摺做鏡像"
   },
   {
     "id": "skill-177",
-    "title": "用紙杯做小分類",
-    "en": "Sort objects by two rules",
+    "title": "造一個橡筋長短音階盒",
+    "en": "Build a rubber-band pitch box",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "同一組物件可以按不同規則分類。",
+    "intro": "用可移動的琴橋改變振動長度，彈出三個可重複的音高。",
     "chapters": [
       177
     ],
@@ -1162,17 +1190,18 @@ const TOPICS = [
   },
   {
     "id": "skill-178",
-    "title": "看水滴怎樣移動",
-    "en": "Compare water on surfaces",
+    "title": "用廚房紙造一條會吸水的橋",
+    "en": "Build a capillary paper bridge",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "用同量水比較吸水和不吸水的表面。",
+    "intro": "讓水沿紙纖維越過杯口，設計一個有對照組的小實驗。",
     "chapters": [
       178
     ],
     "kids": true,
     "age": "6–9 歲",
-    "adult": "大人陪同"
+    "adult": "大人陪同",
+    "spineTitle": "會吸水的紙橋"
   },
   {
     "id": "skill-179",
@@ -1190,11 +1219,11 @@ const TOPICS = [
   },
   {
     "id": "skill-180",
-    "title": "做一張七日天氣卡",
-    "en": "Make a weather observation card",
+    "title": "用水量校準一個雨量筒",
+    "en": "Calibrate a simple rain gauge",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "每天同一時間用符號記天氣。",
+    "intro": "用刻度量水深，做一個可對照同一場雨的讀數工具。",
     "chapters": [
       180
     ],
@@ -1204,11 +1233,11 @@ const TOPICS = [
   },
   {
     "id": "skill-181",
-    "title": "把圖畫講給看不見的人",
-    "en": "Describe a drawing clearly",
+    "title": "用座標傳送一幅秘密圖",
+    "en": "Transmit a picture with grid coordinates",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "練習用方位詞讓別人按描述畫圖。",
+    "intro": "把圖像變成可傳達的格子地址，學會偵測橫直坐標顛倒。",
     "chapters": [
       181
     ],
@@ -1218,11 +1247,11 @@ const TOPICS = [
   },
   {
     "id": "skill-182",
-    "title": "用日常物做一條音色線",
-    "en": "Compare soft household sounds",
+    "title": "做一對可調音的敲擊杯",
+    "en": "Tune two water percussion cups",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "用安全物件找出兩種不同音色。",
+    "intro": "用水量調出兩個可辨音高，再把兩音排成四拍樂句。",
     "chapters": [
       182
     ],
@@ -1232,11 +1261,11 @@ const TOPICS = [
   },
   {
     "id": "skill-183",
-    "title": "自製表情配對卡",
-    "en": "Match expressions to situations",
+    "title": "做一張會彈起的立體卡",
+    "en": "Make a pop-up step card",
     "category": "兒童探索",
     "shelf": "兒童探索",
-    "intro": "用情境和表情練習說明感受。",
+    "intro": "用兩道平行剪口和反向摺線，把平面卡紙變成可開合的立體支架。",
     "chapters": [
       183
     ],

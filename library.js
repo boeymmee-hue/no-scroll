@@ -22,8 +22,8 @@ function palette(book) {
 }
 
 function lessonArtwork(id) {
-  if (id <= 100) return 'assets/book-' + String(id).padStart(2, '0') + '.svg?v=realm-2';
   const book = BOOKS.find(item => item.id === id);
+  if (id <= 100 && !book.revised) return 'assets/book-' + String(id).padStart(2, '0') + '.svg?v=realm-2';
   const [light, ink, shade, icon] = palette(book);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 165">
     <defs><linearGradient id="clay" x2=".8" y2="1"><stop stop-color="#fff0cb"/><stop offset=".55" stop-color="${light}"/><stop offset="1" stop-color="${shade}"/></linearGradient></defs>
@@ -50,7 +50,7 @@ function renderSpine(topic) {
   return `<li class="spine-slot">
     <button type="button" class="book-spine" data-topic="${topic.id}" aria-label="打開 ${title}${status}" title="${title}">
       <span class="spine-number" aria-hidden="true">${number}</span>
-      <span class="spine-title">${title}</span>
+      <span class="spine-title">${escapeText(topic.spineTitle || topic.title)}</span>
       <span class="spine-stamp" aria-hidden="true">${done ? '✓' : saved ? '♥' : '✧'}</span>
     </button>
   </li>`;

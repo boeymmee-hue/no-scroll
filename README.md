@@ -12,7 +12,7 @@ To publish on GitHub Pages, create a repository called `no-scroll`, upload the *
 
 ## The experience
 
-- **Practice route.** The floating welcome leads to one, two or three hours of 30-minute lessons.
+- **Practice route.** Choose one, two or three hours of 30-minute lessons. Roll the dice to draw a new route with distinct subjects.
 - **Tool kit.** Select a tool name to open its purchase, download, borrowing or preparation details. The checkboxes track readiness independently.
 
 - **One book per subject.** Select a spine to open its chapter or a table of contents for longer books. Search covers book titles, chapter titles and materials. The children’s entrance filters the same bookshelf to age-guided activities with adult help.
@@ -22,7 +22,7 @@ To publish on GitHub Pages, create a repository called `no-scroll`, upload the *
 
 ## Local data and editing
 
-Bookmarks, step and tool checklists, saved elapsed time, preferences and notes stay in `localStorage` under `no-scroll-v1`. They are tied to this browser and address. No user text or video is uploaded. The About panel can clear saved work; export drafts first to retain a copy. The original chapter IDs are preserved. Topic links use `#shelf-<id>`, and chapters use `#book-1` through `#book-183`.
+Bookmarks, step and tool checklists, saved elapsed time, preferences and notes stay in `localStorage` under `no-scroll-v1`. They are tied to this browser and address. No user text or video is uploaded. The About panel can clear saved work; export drafts first to retain a copy. The original chapter IDs, bookmarks and project notes are preserved. Substantially revised lessons use a separate progress key so older checkmarks do not mark the new work complete. Topic links use `#shelf-<id>`, and chapters use `#book-1` through `#book-183`.
 
 Topic order and chapter relationships are in `topics.js`; chapter text, checklists and writing prompts are in `data.js`. Original illustrations are in `assets/`, including 20 hairstyle step drawings and the children's owl. Relevant car and cleaning chapters link to official reference material. Use the equipment maker's instructions for model-specific work.
 
@@ -35,7 +35,7 @@ Asset: `assets/skill-park.jpg` · Built-in ImageGen
 
 ## Attraction artwork
 
-The library castle and children's enchanted garden use built-in ImageGen. The original 100 chapters use dimensional SVG artwork from `assets/`. The 83 new chapters use illustrations assembled in `library.js`.
+The library castle and children's enchanted garden use built-in ImageGen. Chapter illustrations use dimensional SVG artwork from `assets/` and illustrations assembled in `library.js`.
 
 - `assets/library-realm.jpg` — Use case stylized-concept. Wide landscape 3:2 3D storybook theme-park attraction banner, an elegant miniature fairy-tale library plaza named only through its visual objects. Handcrafted matte clay and painted wood, warm golden architectural lights, rounded deep purple turret roofs, antique peach and cream stone, an oversized open book sculpture at right with little golden star-shaped lamps, little stairways and trimmed gardens, dusk lavender atmosphere. Straight-on view from above slightly, attractive tactile dimensional detail with soft shadows. Architecture and main object clustered at right two thirds, left one third mostly quiet dark plum atmosphere fading to darker at bottom left for UI text overlay. No letters, text, logos, people, signs or frames.
 - `assets/kids-realm.jpg` — Use case stylized-concept. Wide landscape 3:2 3D storybook theme-park children's enchanted garden attraction banner. At right a charming stylized rounded purple-and-cream owl with tiny gold star on a pointed wizard hat, sitting at the door of a miniature mushroom cottage, small lanterns, peach toadstools, soft sage foliage, gold stepping stones and carved wooden toy details. Warm golden light in lavender twilight. Tactile clay and painted wood, richly dimensional handcrafted miniature, soft shadows. Keep left third muted dark plum for text overlay. No written text, logos, people or UI.
