@@ -98,8 +98,8 @@ function lessonVideoPanel(chapterIds) {
   const chapter = BOOKS.find(book => book.id === chapterIds[0]);
   const seenUrls = new Set();
   const resources = chapterIds.flatMap(id => [
-    ...(lessonResourceLinks[id] || []),
-    ...(BOOKS.find(book => book.id === id).sources || [])
+    ...(lessonResourceLinks[id] || []).map(source => ({ ...source, chapterId: id })),
+    ...(BOOKS.find(book => book.id === id).sources || []).map(source => ({ ...source, chapterId: id }))
   ]).filter(({ url }) => {
     if (seenUrls.has(url)) return false;
     seenUrls.add(url);
@@ -119,9 +119,9 @@ function lessonVideoPanel(chapterIds) {
         <div class="clip-player"></div>
         <p class="clip-focus"><a class="text-button" href="https://www.youtube.com/watch?v=${clip.id}" target="_blank" rel="noopener noreferrer">在 YouTube 開啟原片 ↗</a></p>
       </details>`).join('')}` : ''}
-    ${resources.length ? `<div class="manual-sources">
-      <span>文章、圖解及原始資料</span>
-      ${resources.map(source => `<a href="${escapeText(source.url)}" target="_blank" rel="noopener noreferrer">${escapeText(source.title)} ↗</a>`).join('')}
+    ${resources.length ? `<div class="resource-library">
+      <h4 class="clip-subheading">圖文教學及參考</h4>
+      <div class="resource-grid">${resources.map(source => resourceCard(source, BOOKS.find(book => book.id === source.chapterId))).join('')}</div>
     </div>` : ''}
     <h4 class="clip-subheading">No scroll 粵語圖解</h4>
     <details class="lesson-clip" name="lesson-clip" data-guide="${guide}">
@@ -146,6 +146,18 @@ function initLessonVideos() {
   });
   manual.addEventListener('toggle', event => {
     const clip = event.target;
+    if (clip.matches('.resource-preview')) {
+      const container = clip.querySelector('.resource-document');
+      container.replaceChildren();
+      if (clip.open && manual.open) {
+        const frame = document.createElement('iframe');
+        frame.title = clip.closest('.resource-card').querySelector('h5').textContent;
+        frame.referrerPolicy = 'no-referrer';
+        frame.src = clip.dataset.resourceUrl;
+        container.append(frame);
+      }
+      return;
+    }
     if (!clip.matches('.lesson-clip')) return;
     const player = clip.querySelector('.clip-player');
     if (!clip.open || !manual.open) {
@@ -182,6 +194,10 @@ function initLessonVideos() {
   }, true);
   manual.addEventListener('close', () => {
     if (manual.open) return;
+    for (const preview of manual.querySelectorAll('.resource-preview[open]')) {
+      preview.open = false;
+      preview.querySelector('.resource-document').replaceChildren();
+    }
     for (const clip of manual.querySelectorAll('.lesson-clip[open]')) {
       clip.open = false;
       clearClipPlayer(clip.querySelector('.clip-player'));

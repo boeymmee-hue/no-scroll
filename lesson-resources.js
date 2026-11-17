@@ -137,3 +137,25 @@ addLessonResource([136], 'Texas A&M AgriLife Extension · 室內植物的澆水�
 addLessonResource([141], '加拿大語言資源中心 · 把決定、根據與下一步寫成簡報', 'https://our-languages.canada.ca/en/writing-tips-plus/clear-communication-write-clear-and-effective-briefing-notes');
 addLessonResource([147], 'Digital.gov · 用主動語態和具體動詞寫清楚', 'https://digital.gov/guides/plain-language/writing');
 addLessonResource([167], 'Open Music Theory · 拍子與八分音符細分', 'https://openmusictheory.github.io/meter.html');
+
+// Describe the relevant part of the source without reproducing its article.
+function resourceCard(source, chapter, index) {
+  const url = new URL(source.url);
+  const pdf = /\.pdf$/i.test(url.pathname);
+  const parts = source.title.split(' · ');
+  const publisher = parts.length > 1 ? parts.shift() : url.hostname.replace(/^www\./, '');
+  const subject = parts.length ? parts.join(' · ') : source.title;
+  return `<article class="resource-card">
+    <div class="resource-card-heading">
+      <span class="resource-symbol" aria-hidden="true">${pdf ? '▤' : '▧'}</span>
+      <div><small>${escapeText(publisher)} · ${pdf ? 'PDF 圖解' : '原文教學'}</small><h5>${escapeText(subject)}</h5></div>
+    </div>
+    <p>配合「${escapeText(chapter.title)}」，參考${escapeText(subject)}的做法，再回到本課實作。</p>
+    <a class="resource-open" href="${escapeText(source.url)}" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a>
+    ${pdf ? `<details class="resource-preview" data-resource-url="${escapeText(source.url)}">
+      <summary>在書內展開 PDF 圖解</summary>
+      <p class="resource-help">可以捲動及放大。若裝置未顯示文件，請用上面的「閱讀原文」。</p>
+      <div class="resource-document"></div>
+    </details>` : ''}
+  </article>`;
+}
