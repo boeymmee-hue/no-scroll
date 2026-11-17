@@ -142,6 +142,7 @@ addLessonResource([167], 'Open Music Theory · 拍子與八分音符細分', 'ht
 function resourceCard(source, chapter, index) {
   const url = new URL(source.url);
   const pdf = /\.pdf$/i.test(url.pathname);
+  const inlinePdf = pdf && !['www.loc.gov', 'www.edb.gov.hk'].includes(url.hostname);
   const parts = source.title.split(' · ');
   const publisher = parts.length > 1 ? parts.shift() : url.hostname.replace(/^www\./, '');
   const subject = parts.length ? parts.join(' · ') : source.title;
@@ -152,7 +153,8 @@ function resourceCard(source, chapter, index) {
     </div>
     <p>配合「${escapeText(chapter.title)}」，參考${escapeText(subject)}的做法，再回到本課實作。</p>
     <a class="resource-open" href="${escapeText(source.url)}" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a>
-    ${pdf ? `<details class="resource-preview" data-resource-url="${escapeText(source.url)}">
+    ${pdf && !inlinePdf ? '<p class="resource-help">這個來源以原網站閱讀，撳「閱讀原文」開啟完整 PDF 圖解。</p>' : ''}
+    ${inlinePdf ? `<details class="resource-preview" data-resource-url="${escapeText(source.url)}">
       <summary>在書內展開 PDF 圖解</summary>
       <p class="resource-help">可以捲動及放大。若裝置未顯示文件，請用上面的「閱讀原文」。</p>
       <div class="resource-document"></div>
